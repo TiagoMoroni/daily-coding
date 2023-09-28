@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1b7ff18f21.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        'main': '0 0 200px 50px rgba(18, 253, 183, 0.4)',
+                        'inside': 'white 0px 30px 40px -2em inset'
+                    },
+                    colors: {
+                        main_gray: "#E6E8E7"
+                    },
+                    minWidth: {
+                        'card': '80%',
+                    },
+                    height: {
+                        'side_card': '90%',
+                    },
+                    backgroundImage: {
+                        'main': "linear-gradient(transparent, #E6E8E7), url(img.jpeg);",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<!-- TODO -->
+<!-- arc-shape stars -->
+
+<body class="h-full h-screen flex justify-center items-center">
+    <div class="h-4/5 w-1/4 shadow-main bg-main_gray">
+        <div class="sticky h-0 w-100">
+            <div class="flex justify-between shadow-inside">
+                <i class="fa-solid fa-bars p-3 text-lg"></i>
+                <i class="fa-solid fa-magnifying-glass p-3 text-lg"></i>
+            </div>
+        </div>
+        <div class="h-1/2 bg-main bg-cover">
+
+        </div>
+        <div class="h-1/2 py-4 flex items-center">
+            <div class="h-side_card bg-white w-16 rounded-tr-xl rounded-br-xl">
+
+            </div>
+            <div class=" min-w-card rounded-xl h-full bg-white mx-4 flex items-center flex-col">
+                <!-- <div class="pt-5 width-full">
+                    <i class="absolute p fa-solid fa-star text-red-600"></i>
+                    <i class="absolute pt-1 pl-0 fa-solid fa-star text-red-600"></i>
+                    <i class="absolute p fa-solid fa-star text-red-600"></i>
+                    <i class="absolute pt-1 pl-6 fa-regular fa-star text-red-600"></i>
+                    <i class="absolute p fa-regular fa-star text-red-600"></i>
+                </div> -->
+                <div class="pt-4">
+                    <i class=" p fa-solid fa-star text-red-600"></i>
+                    <i class=" pt-1 fa-solid fa-star text-red-600"></i>
+                    <i class=" p fa-solid fa-star text-red-600"></i>
+                    <i class=" pt-1 fa-regular fa-star text-red-600"></i>
+                    <i class=" p fa-regular fa-star text-red-600"></i>
+                </div>
+
+                <div class="text-red-600 font-medium text-lg">3.5</div>
+                <div class="text-gray-400 font-light text-xs">47 Reviews</div>
+                <div class="text-2xl font-medium pt-3 text-center">Forest Fruit Pie</div>
+                <div class="word-break text-gray-400 text-center text-sm">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Enim architecto optio unde praesentium iste impedit sed, porro facere</div>
+                <button class="text-white bg-red-500 rounded-xl px-5 py-1 mt-6">Read More</button>
+            </div>
+            <div class="h-side_card bg-white w-16 rounded-tl-xl rounded-bl-xl">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
