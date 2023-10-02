@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1b7ff18f21.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        'main': '0 0 200px 50px rgba(18, 253, 183, 0.4)',
+                        'inside': 'white 0px 30px 40px -2em inset'
+                    },
+                    colors: {
+                        main_gray: "#E6E8E7"
+                    },
+                    minWidth: {
+                        'left_card': '260px',
+                    },
+                    minHeight: {
+                        'left_card': '120px',
+                    },
+                    height: {
+                        'left_card': '350px',
+                    },
+                    backgroundImage: {
+                        'main': "url(img.jpeg);",
+                    },
+                    skew: {
+                        '45': '45deg',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="flex p-12 h-screen">
+    <div class="flex items-center min-h-left_card h-left_card">
+        <img src="perfil.webp" alt="" class="rounded-full w-10 h-10">
+        <div class="min-w-left_card w-10 bg-white h-full ml-5 rounded-md shadow-xl">
+            <div class="h-2/5 bg-blue-200">
+            </div>
+            <div class="h-3/5 bg-white z-20 flex flex-col items-center">
+                <img src="perfil.webp" alt="" class="rounded-full w-[5rem] h-[5rem] -mt-10">
+                <span class="pt-7 font-bold">Sally Ramos</span>
+                <small>@sallytheramos</small>
+                <button class="bg-black text-white rounded-full px-6 py-1 mt-4">Follow</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-20 bg-white h-[26rem] w-[26rem] shadow-xl">
+        <div class="flex justify-between px-5 py-6 items-center">
+            <div class="flex">
+                <img src="perfil.webp" alt="" class="rounded-full w-[2.6rem] h-[2.6rem]">
+                <div class="pl-2">
+                    <small class="block">Carrie Brewer</small>
+                    <small class="-mt-1">214 Followers</small>
+                </div>
+            </div>
+            <button class="rounded-full px-6 py-1 border-black border-[1px]">Follow</button>
+        </div>
+        <div class="h-3/6 bg-blue-200">
+        </div>
+        <div class="flex flex-col justify-center items-center py-3">
+            <div class="text-gray-500">8K downloads - UpBrain, Sinovora</div>
+            <div>
+                <button class="bg-black text-white rounded-full px-6 py-1 mt-4">Free Download</button>
+                <button class="rounded-full px-7 ml-4 py-1 border-black border-[1px]">Share
+                    <i class="fa-solid fa-share pl-6 -mr-4 text-black"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-between px-5 py-6 w-[26rem] h-[4rem] items-center bg-white shadow-xl">
+        <div class="flex">
+            <img src="perfil.webp" alt="" class="rounded-full w-[2.6rem] h-[2.6rem]">
+            <div class="pl-2">
+                <small class="block">Carrie Brewer</small>
+                <small class="-mt-1">214 Followers</small>
+            </div>
+        </div>
+        <button class="rounded-full px-6 py-1 border-black border-[1px]">Follow</button>
+    </div>
+</body>
+
+</html>
