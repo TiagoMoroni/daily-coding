@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1b7ff18f21.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        'main': '0px 0px 100px -0px rgb(0 0 0 / 0.25)',
+                        'inside': 'white 0px 30px 40px -2em inset'
+                    },
+                    colors: {
+                        main_gray: "#E6E8E7"
+                    },
+                    minWidth: {
+                        'card': '80%',
+                    },
+                    height: {
+                        'side_card': '90%',
+                    },
+                    backgroundImage: {
+                        'main': "linear-gradient(transparent, #E6E8E7), url(img.jpeg);",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#0C1524] h-screen flex items-center justify-center">
+    <div class="border-[13px] border-[#080E1C] w-[28rem] text-white">
+        <div class="flex items-center pl-6 py-4 bg-[#121930]">
+            <div class="w-[90%]">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <span class="font-thin">Caleb Waters</span>
+                <span class="float-right text-gray-400">3 hours ago</span>
+                <div>
+                    <small class="text-gray-400">
+                        Planning to visit Las Vegas or any other vacational
+                    </small>
+                </div>
+            </div>
+            <div class="w-[10%] pr-3 text-gray-400">
+                <i class="fa-solid fa-ellipsis-vertical float-right"></i>
+            </div>
+        </div>
+        <div
+            class="before:absolute before:bg-[#4F8919] before:w-[4px] before:h-full before:left-0 flex items-center mt-1 pl-6 py-4 bg-[#121930] shadow-main scale-y-[1.1]">
+            <div class="w-[90%]">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <span class="font-thin">Caleb Waters</span>
+                <span class="float-right text-gray-400">3 hours ago</span>
+                <div>
+                    <small class="text-gray-400">
+                        Planning to visit Las Vegas or any other vacational
+                    </small>
+                </div>
+            </div>
+            <div class="w-[10%] pr-3 text-gray-400">
+                <i class="fa-solid fa-ellipsis-vertical float-right"></i>
+            </div>
+        </div>
+        <div class="flex items-center mt-1 pl-6 py-4 bg-[#121930]">
+            <div class="w-[90%]">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <span class="font-thin">Caleb Waters</span>
+                <span class="float-right text-gray-400">3 hours ago</span>
+                <div>
+                    <small class="text-gray-400">
+                        Planning to visit Las Vegas or any other vacational
+                    </small>
+                </div>
+            </div>
+            <div class="w-[10%] pr-3 text-gray-400">
+                <i class="fa-solid fa-ellipsis-vertical float-right"></i>
+            </div>
+        </div>
+        <div class="flex items-center mt-1 pl-6 py-4 bg-[#121930]">
+            <div class="w-[90%]">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <span class="font-thin">Caleb Waters</span>
+                <span class="float-right text-gray-400">3 hours ago</span>
+                <div>
+                    <small class="text-gray-400">
+                        Planning to visit Las Vegas or any other vacational
+                    </small>
+                </div>
+            </div>
+            <div class="w-[10%] pr-3 text-gray-400">
+                <i class="fa-solid fa-ellipsis-vertical float-right"></i>
+            </div>
+        </div>
+        <div class="flex items-center mt-1 pl-6 py-4 bg-[#121930]">
+            <div class="w-[90%]">
+                <i class="fa-solid fa-star text-yellow-400"></i>
+                <span class="font-thin">Caleb Waters</span>
+                <span class="float-right text-gray-400">3 hours ago</span>
+                <div>
+                    <small class="text-gray-400">
+                        Planning to visit Las Vegas or any other vacational
+                    </small>
+                </div>
+            </div>
+            <div class="w-[10%] pr-3 text-gray-400">
+                <i class="fa-solid fa-ellipsis-vertical float-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="ml-10 flex flex-col items-center">
+        <div class="w-[24rem] text-gray-400 border-[13px] border-[#080E1C]">
+            <div class="bg-[#121930] items-center p-2 flex justify-between">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                    <span class="pl-1">
+                        <small>
+                            Search
+                        </small>
+                    </span>
+                </div>
+                <i class="fa-solid fa-chevron-down text-sm float-right"></i>
+            </div>
+        </div>
+        <div class="text-gray-400 bg-[#080E1C] w-[18rem] h-[18rem] mt-6 flex flex-col justify-center items-center">
+            <i class="fa-regular fa-message text-[60px]
+            after:absolute after:w-6 after:h-6 after:content-['5'] after:bg-[#4F8919] after:text-sm after:rounded-sm after:-ml-4 after:-mt-2 after:pt-[0.2rem] after:pl-2"></i>
+            <span class="pt-4">
+                You have
+            </span>
+            <b>5 new messages</b>
+        </div>
+    </div>
+</body>
+
+</html>
