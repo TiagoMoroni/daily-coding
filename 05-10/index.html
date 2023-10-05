@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1b7ff18f21.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                backgroundImage: {
+                    'main': "url('https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?cs=srgb&dl=pexels-johannes-plenio-1423600.jpg&fm=jpg')",
+                    'first_button': "linear-gradient(to right, black 50%, white 50%), linear-gradient(to right, #EF3109 50%, rgba(229, 229, 229, 0.3) 50%);",
+                    'second_button': "linear-gradient(to right, black 50%, white 50%), linear-gradient(to right, #3E9300 50%, rgba(229, 229, 229, 0.3) 50%);",
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-main bg-cover w-screen h-screen">
+    <div class=" backdrop-blur-xl w-full h-full flex flex-col justify-center items-center gap-4">
+        <div class="text-white hover:text-black flex bg-first_button inline-block relative [-webkit-background-clip:text,_padding-box] bg-[length:200%_100%] text-transparent bg-right transition-all ease-in-out duration-300 hover:bg-left">
+            <i class="fa-regular fa-envelope relative p-6 text-5xl bg-[#EF3109] after:font-['FontAwesome'] after:content-['\f071'] after:absolute after:right-4 after:top-[50px] after:text-[20px] after:text-black"></i>
+            <div class="flex justify-center items-center p-8">
+                Your message could not be send
+                <i class="fa-solid fa-close absolute top-2 right-2 text-black"></i>
+            </div>
+        </div>
+        <div class="text-white hover:text-black flex bg-second_button inline-block relative [-webkit-background-clip:text,_padding-box] bg-[length:200%_100%] text-transparent bg-right transition-all ease-in-out duration-300 hover:bg-left">
+            <i class="fa-regular fa-envelope relative p-6 text-5xl bg-[#3E9300] after:font-['FontAwesome'] after:content-['\f058'] after:rounded-full after:bg-white after:absolute after:right-4 after:top-[50px] after:text-[20px] after:text-black"></i>
+            <div class="flex justify-center items-center p-8">
+                Your message could not be send
+                <i class="fa-solid fa-close absolute top-2 right-2 text-black"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
