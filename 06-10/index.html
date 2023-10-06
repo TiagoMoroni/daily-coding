@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1b7ff18f21.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                backgroundImage: {
+                    'first_button': "linear-gradient(348deg, black 32%, white 0%), linear-gradient(348deg, white 32%, #15D7C2 0%, #34E39A 100%);",
+                    'second_button': "linear-gradient(348deg, black 32%, white 0%), linear-gradient(348deg, white 32%, #D51843 0%, #F03089 100%);",
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#252F45] h-screen w-screen flex justify-center items-center gap-4">
+    <div
+        class="rounded-xl flex flex-col w-[20rem] h-[20rem] items-center justify-around bg-first_button inline-block relative [-webkit-background-clip:text,_padding-box] bg-[length:100%_200%] text-transparent bg-bottom transition-all ease-in-out duration-300 hover:bg-top">
+        <div class="relative">
+            <i class="fa-solid fa-wifi text-white text-6xl
+            after:font-['FontAwesome'] after:content-['\f058'] after:rounded-full after:bg-[#17D8C0] after:border-4 after:border-[#17D8C0] after:absolute after:-right-[7px] after:-bottom-2 after:text-[1.875rem]"></i>
+        </div>
+        <div class="flex flex-col items-center text-[17px]">
+            <div class="text-xl">
+                <b>
+                    Success!
+                </b>
+            </div>
+            <div>
+                <span>Connection works perfectly!</span>
+            </div>
+            <a class="cursor-pointer text-[#008FF9] pt-5">
+                <b>
+                    OK
+                </b>
+            </a>
+        </div>
+    </div>
+    <div
+        class="rounded-xl flex flex-col w-[20rem] h-[20rem] items-center justify-around bg-second_button inline-block relative [-webkit-background-clip:text,_padding-box] bg-[length:100%_200%] text-transparent bg-bottom transition-all ease-in-out duration-300 hover:bg-top">
+        <div class="relative">
+            <i class="fa-solid fa-wifi text-white text-6xl
+            after:font-['FontAwesome'] after:content-['\f057'] after:rounded-full after:bg-[#E12162] after:border-4 after:border-[#E12162] after:absolute after:-right-[7px] after:-bottom-2 after:text-[1.875rem]"></i>
+        </div>
+        <div class="flex flex-col items-center text-[17px]">
+            <div class="text-xl">
+                <b>
+                    Error!
+                </b>
+            </div>
+            <div>
+                <span>Connection couldn't be established!</span>
+            </div>
+            <a class="cursor-pointer text-[#008FF9] pt-5">
+                <b>
+                    Retry
+                </b>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
