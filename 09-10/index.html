@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1b7ff18f21.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                backgroundImage: {
+                    main: "linear-gradient(135deg, #FF5CAC, #AD64E0)",
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="h-screen w-screen bg-[#1D1A38] flex items-center justify-center">
+    <div class="px-8 py-8 font-semibold text-[#C4BCFD] rounded-xl bg-[#131229]
+    relative before:absolute before:bg-main before:aspect-square before:w-full before:-top-14 before:-left-14 before:-z-10 before:rounded-b-3xl before:rounded-tr-3xl">
+        <div class="text-lg">
+            Closest stores
+        </div>
+        <div class="pt-6">
+            <small>Postal code</small>
+            <div class="flex justify-between items-center">
+                <input value="5055" type="text" class="bg-[#131229] border-2 border-[#302C56] rounded-md w-[7rem] leading-10 px-3">
+                <div class="pl-4 text-[#776DF0]">
+                    <i class="fa-solid fa-location-dot"></i>
+                    use my location
+                </div>
+            </div>
+        </div>
+        <div class="pt-6">
+            <span class="font-semibold">
+                POINT Bergen Sentrum
+            </span>
+            <span class="float-right uppercase leading-4 rounded-2xl px-[0.3rem] py-[0.1rem] bg-[#FF5DAF]">
+                <small class="text-[10px] font-semibold">
+                    closed
+                </small>
+            </span>
+            <div class="text-[14px] pt-2">
+                Strandagaten 55-57, 6007 Bergen
+            </div>
+            <div class="text-[14px] pt-2">
+                <i class="fa-regular fa-clock"></i>
+                <span class="">9:00 - 19:00</span>
+            </div>
+        </div>
+        <div class="pt-6">
+            <span class="font-semibold">
+                POIVEestkanten
+            </span>
+            <span class="float-right uppercase leading-4 rounded-2xl px-[0.3rem] py-[0.1rem] bg-[#05BBA0]">
+                <small class="text-[10px] font-semibold">
+                    open
+                </small>
+            </span>
+            <div class="text-[14px] pt-2">
+                Strandagaten 55-57, 6007 Bergen
+            </div>
+            <div class="text-[14px] pt-2">
+                <i class="fa-regular fa-clock"></i>
+                <span class="">9:00 - 19:00</span>
+            </div>
+        </div>
+        <button class="bg-[#756BFE] w-full py-3 rounded-md mt-6 font-semibold">
+            View all
+        </button>
+    </div>
+</body>
+
+</html>

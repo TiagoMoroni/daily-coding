@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1b7ff18f21.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                backgroundImage: {
+                    'main': "url('https://wallpapers.com/images/hd/antarctica-rocks-covered-snow-xwqanoqa2ng81u7q.jpg')",
+                },
+                dropShadow: {
+                    '4xl': [
+                        '0 35px 35px rgba(0, 0, 0, 0.25)',
+                        '0 45px 65px rgba(0, 0, 0, 0.15)'
+                    ]
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-main bg-cover w-screen h-screen">
+    <div class=" backdrop-blur-xl w-full h-full flex flex-col justify-center items-center gap-4">
+        <div class="text-[#B9BBBC] w-[36%] bg-[#F3F5F7] px-4 py-3 rounded-md drop-shadow-4xl">
+            <div class="flex justify-between items-center font-bold text-xl">
+                Confirm
+                <i class="fa-solid fa-close"></i>
+            </div>
+            <hr class="border-[1px] my-2">
+            <div class="flex flex-col items-center pt-3">
+                <i class="fa-solid fa-circle-question text-8xl text-[#D2E0EB]"></i>
+                <div class="text-[#3A7BBB] w-4/6 text-center pt-3 text-lg">
+                    Are you sure you want to navigate away from this page?
+                </div>
+            </div>
+            <div class="text-center pt-8">
+                Press OK to continue, or Cancel to stay on the current page
+            </div>
+            <div class="flex justify-center gap-6 mt-5 text-lg">
+                <button class="py-2 bg-[#3A7BBB] w-28 rounded-lg drop-shadow-4xl text-white">OK</button>
+                <button class="py-2 bg-[#D2E0EB] w-28 rounded-lg drop-shadow-4xl text-[#3A7BBB]">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
